@@ -1,5 +1,6 @@
 package com.cetrinw.util;
 
+import com.mongodb.Mongo;
 import org.apache.commons.dbutils.BasicRowProcessor;
 import org.apache.commons.dbutils.BeanProcessor;
 import org.apache.commons.dbutils.DbUtils;
@@ -26,7 +27,11 @@ DatabaseUtil {
 
 	public static Connection getOracleConnection() {
 		
-		return openConn("Oracle", "192.168.0.168", "1521", "ideadata", "yyfx", "yyfx");
+		return openConn("Oracle", "192.168.0.168", "1521", "idadata", "yyfx", "yyfx");
+	}
+
+	public static Mongo getMongodbConnection() {
+		return new Mongo();
 	}
 	
 	public static Connection openConn(String type, String host, String port,
