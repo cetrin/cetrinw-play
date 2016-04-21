@@ -26,8 +26,7 @@ DatabaseUtil {
 	}
 
 	public static Connection getOracleConnection() {
-		
-		return openConn("Oracle", "192.168.0.168", "1521", "idadata", "yyfx", "yyfx");
+		return openConn("Oracle", "192.168.0.168", "1521", "ideadata", "yyfx", "yyfx");
 	}
 
 	public static Mongo getMongodbConnection() {

@@ -1,4 +1,4 @@
-package com.cetrinw.db;
+package com.cetrinw.wang.db;
 
 import org.junit.Test;
 
@@ -8,8 +8,7 @@ import org.junit.Test;
 public class DataMigrateTest {
     @Test
     public void saveDataToMongodb() throws Exception {
-        DataMigrate d  = new DataMigrate();
-        d.saveDataToMongodb();
+
     }
 
 }
