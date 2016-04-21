@@ -14,8 +14,8 @@ public class FileUtil {
 	/**
 	 * 将List -> file
 	 * 
-	 * @param list
-	 * @param filePath
+	 * @param list 集合
+	 * @param filePath 路径
 	 */
 	public static void write2Txt(List<String> list, String filePath) {
 		FileWriter writer = null;
@@ -104,20 +104,19 @@ public class FileUtil {
 	      
 	        // 从文件读入
 	        if (filenames.length > 0) {
-	            for (String filename : filenames) {
-	                try {
-	                   // FileReader fr = new FileReader(new File(filename));
-	                	InputStreamReader fr=new InputStreamReader(new FileInputStream(filename),"UTF-8");
-	                    BufferedReader br = new BufferedReader(fr);
-	                    String line = null;
-	                    while ((line = br.readLine()) != null) {
-	                        list.add(line);
-	                    }
-	                } catch (IOException e) {
-	                    System.out.println("读取事务数据库失败。");
-	                    System.exit(-2);
-	                }
-	            }
+	            for (String filename : filenames)
+					try {
+						// FileReader fr = new FileReader(new File(filename));
+						InputStreamReader fr = new InputStreamReader(new FileInputStream(filename), "UTF-8");
+						BufferedReader br = new BufferedReader(fr);
+						String line = null;
+						while ((line = br.readLine()) != null) {
+							list.add(line);
+						}
+					} catch (IOException e) {
+						System.out.println("读取事务数据库失败。");
+						System.exit(-2);
+					}
 	        }
 			return list;
 	}

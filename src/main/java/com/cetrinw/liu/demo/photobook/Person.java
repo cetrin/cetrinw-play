@@ -5,36 +5,39 @@ package com.cetrinw.liu.demo.photobook;
  */
 public class Person {
     private String name;
-    private int phonenumber;
+    private String phoneNumber;
     private String email;
-    public Person(){
-        super();
+
+    public Person() {
     }
-    public Person(String name,int phonenumber,String email){
-        super();
-        this.name=name;
-        this.phonenumber=phonenumber;
-        this.email=email;
+
+    public Person(String name, String phoneNumber, String email) {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public void setName(String name){
-        this.name=name;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    public int getPhonenumber(){
-        return phonenumber;
+
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
-    public void setPhonenumber(int phonenumber){
-        this.phonenumber=phonenumber;
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
-    public String getEmail(){
+
+    public String getEmail() {
         return email;
     }
-    public void setEmail(String email){
-        this.email=email;
-    }
-    public void show(){
-        System.out.println(name+"---"+phonenumber+"---"+email);
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

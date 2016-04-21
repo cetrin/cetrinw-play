@@ -22,7 +22,6 @@ public class SelectData {
         for (Cetrinw content : list) {
             System.out.println(content.getContent());
         }
-
     }
 
     public static void main(String[] args) {
