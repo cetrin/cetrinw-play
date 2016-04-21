@@ -16,12 +16,19 @@ public class Step4 {
         return a*b;
     }
     public static int div(int a,int b){
-        return a/b;
-    }
-
+        if(b==0){
+            return -1;
+        }else if(b<0){
+            b=-b;
+            return a/b;
+        }
+        else{
+            return a/b;
+        }
+        }
     public static void main(String[] args) {
         int a=63;
-        int b=12;
+        int b=-10;
         System.out.println(add(a,b));
         System.out.println(sub(a,b));
         System.out.println(mul(a,b));
