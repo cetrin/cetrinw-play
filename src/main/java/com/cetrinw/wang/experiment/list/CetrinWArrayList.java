@@ -61,6 +61,17 @@ public class CetrinWArrayList<E> implements CetrinwList<E>{
         current--;
     }
 
+    public void insert(int index,E e) {
+        confirmIndex(index);
+        for (int i = 0; i < elements.length; i++) {
+            if(i >= index && i+2 < elements.length){
+                elements[i] = e;
+                elements[i+1] = elements[i+2];
+            }
+        }
+        current++;
+    }
+
     public boolean contains(Object o) {
         for (Object element : this.elements) {
             if(o.equals(element)){

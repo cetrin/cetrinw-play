@@ -30,7 +30,7 @@ DatabaseUtil {
 	}
 
 	public static Mongo getMongodbConnection() {
-		return new Mongo();
+		return new Mongo("192.168.0.181",27017);
 	}
 	
 	public static Connection openConn(String type, String host, String port,
