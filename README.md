@@ -4,7 +4,7 @@
 #目前的目录结构
 >`com.cetrinw.wang.db`,包含了Oracle到Mongodb的数据移植, 一级`MongoTemplate`的简单使用。<br>
 >`com.cetrinw.liu`是一些简单的练习题。<br>
->`com.cetrinw.util`是一些简单的工具类。
+>`com.cetrinw.util`是一些简单的工具类。<br>
 >`com.cetrinw.wang.experiment` 放置一些实验类
 
 #后续计划
