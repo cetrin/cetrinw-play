@@ -9,7 +9,7 @@ public class CetrinWArrayListTest {
 
     @Test
     public void cetrinWArrayListTest(){
-        CetrinwList<String> list = new CetrinWArrayList<String>();
+        CetrinwList<String> list = new CetrinwArrayList<String>();
 
         list.add("a");
         list.add("b");

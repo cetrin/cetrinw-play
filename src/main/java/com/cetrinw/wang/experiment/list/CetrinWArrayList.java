@@ -3,7 +3,7 @@ package com.cetrinw.wang.experiment.list;
 /**
  * Created by Cetrin Wang on 2016/4/24.
  */
-public class CetrinWArrayList<E> implements CetrinwList<E>{
+public class CetrinwArrayList<E> implements CetrinwList<E>{
 
     /**
      * 数组默认长度
@@ -26,11 +26,11 @@ public class CetrinWArrayList<E> implements CetrinwList<E>{
     private int current;
 
 
-    public CetrinWArrayList(){
+    public CetrinwArrayList(){
         this(DEFAULT_SIZE);
     }
 
-    public CetrinWArrayList(int size){
+    public CetrinwArrayList(int size){
         if(size < 0){
             throw new RuntimeException("数组大小不能小于0");
         }else{
