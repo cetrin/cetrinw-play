@@ -92,6 +92,10 @@ public class CetrinWArrayList<E> implements CetrinwList<E>{
         return false;
     }
 
+    public void clearList() {
+        elements = new Object[DEFAULT_SIZE];
+    }
+
     /**
      * 确认当前数组的容量，如果满足，则不操作，如果不满足，则增加空间
      */
