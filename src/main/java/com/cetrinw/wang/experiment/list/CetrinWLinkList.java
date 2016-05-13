@@ -138,13 +138,6 @@ public class CetrinWLinkList<E> implements CetrinwList<E>{
     }
 
     private void insertNode(int index,E e){
-        Node<E> newNode = new Node<E>(e,null,null);
-
-        Node<E> n = findNode(index);
-        Node<E> prev = n.prev;
-        Node<E> next = n.next;
-
-        prev.next = newNode;
-        n.next = next;
+       addNode(e,findNode(index));
     }
 }
